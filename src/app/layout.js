@@ -1,6 +1,6 @@
 import { Bellefair, Barlow_Condensed } from "@next/font/google";
 import "./globals.css";
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/components/NavBar";
 // import {barlow, bellefair} from '@/utils/fonts'
 
 const bellefair = Bellefair({
