@@ -15,8 +15,8 @@ module.exports = {
         "sky-blue": "#d0d6f9",
       },
       fontFamily: {
-        Bellefair: ["Bellefair", "serif"], // for h1-h4, subhead1
-        Barlow: ["Barlow Condensed", "sans-serif"], // for h5, subhead2, nav text, body
+        serif: ['var(--font-bellefair)', "serif"], // for h1-h4, subhead1
+        sans: ['var(--font-barlow)', "sans-serif"], // for h5, subhead2, nav text, body
       },
     },
   },
