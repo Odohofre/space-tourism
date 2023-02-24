@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-
+import Link from 'next/link'
 import { logo, close, open } from "@/utils/shared-images";
 
 export default function NavBar() {
@@ -32,9 +32,9 @@ export default function NavBar() {
       <nav className="flex items-center justify-between text-base mt-[1px] px-8">
         {/* Logo */}
         <div className="bg-white rounded-full md:w-full flex items-center flex-shrink">
-          <a href="">
+          <Link href="/">
             <Image src={logo} alt="Brand Logo" width={40} height={40} />
-          </a>
+          </Link>
         </div>
 
         {/* open and close button */}
@@ -60,7 +60,7 @@ export default function NavBar() {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } bg-white/[0.04] fixed top-0 right-0 h-screen w-2/3 z-40`}
+          } bg-white/[0.04] fixed top-0 right-0 h-screen w-2/3 z-40 backdrop-blur-2xl`}
         >
           <div className="mt-28 pl-8 space-y-8 text-white font-sans tracking-[2.7px]">
             <a href="#" className="block" onClick={handleLinkClick}>
@@ -72,9 +72,9 @@ export default function NavBar() {
             <a href="#" className="block" onClick={handleLinkClick}>
               02 CREW
             </a>
-            <a href="#" className="block" onClick={handleLinkClick}>
+            <Link href="/technology" className="block" onClick={handleLinkClick}>
               03 TECHNOLOGY
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
