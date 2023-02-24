@@ -25,9 +25,9 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="bg-dark-blue px-6 py-8 w-full h-full">
+      <body className="bg-dark-blue py-8 w-full h-screen">
         <NavBar />
-        <main>{children}</main>
+        <main className="w-full h-full">{children}</main>
       </body>
     </html>
   );
