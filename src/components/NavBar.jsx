@@ -29,7 +29,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="flex items-center justify-between text-base mt-[1px]">
+      <nav className="flex items-center justify-between text-base mt-[1px] px-8">
         {/* Logo */}
         <div className="bg-white rounded-full md:w-full flex items-center flex-shrink">
           <a href="">
