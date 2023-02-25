@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section className="bg-home-background-mobile bg-no-repeat bg-cover bg-center bg-fixed h-full w-full font-sans text-center text-sky-blue mt-12 px-6">
+    <section className="bg-home-background-mobile bg-no-repeat bg-cover bg-center bg-fixed h-full w-full font-sans1 text-center text-sky-blue mt-12 px-6">
       <h1 className="text-base uppercase tracking-[2.7px] leading-[19.2px]">
         So, you want to travel to{" "}
       </h1>

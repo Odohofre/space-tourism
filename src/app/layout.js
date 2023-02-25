@@ -1,4 +1,4 @@
-import { Bellefair, Barlow_Condensed } from "@next/font/google";
+import { Bellefair, Barlow, Barlow_Condensed } from "@next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 // import {barlow, bellefair} from '@/utils/fonts'
@@ -10,10 +10,17 @@ const bellefair = Bellefair({
   display: "swap",
 });
 
-const barlow = Barlow_Condensed({
+const barlow = Barlow({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-barlow",
+  display: "swap"
+})
+
+const barlow_con = Barlow_Condensed({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-barlow-con",
   display: "swap",
 });
 
@@ -21,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`scroll-smooth ${barlow.variable} ${bellefair.variable}`}
+      className={`scroll-smooth ${barlow.variable} ${bellefair.variable} ${barlow_con.variable}`}
     >
       {/*
         <head /> will contain the components returned by the nearest parent

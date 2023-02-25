@@ -13,6 +13,8 @@ module.exports = {
       backgroundImage: {
         "home-background-mobile":
           "url('../assets/Images/home-images/background-home-mobile.jpg')",
+        "technology-background-mobile":
+          "url('../assets/Images/technology-images/background-technology-mobile.jpg')",
       },
       colors: {
         "dark-blue": "#0b0d17",
@@ -20,7 +22,8 @@ module.exports = {
       },
       fontFamily: {
         serif: ["var(--font-bellefair)", "serif"], // for h1-h4, subhead1
-        sans: ["var(--font-barlow)", "sans-serif"], // for h5, subhead2, nav text, body
+        sans1: ["var(--font-barlow-con)", "sans-serif"], // for h5, subhead2, nav text, body
+        sans2: ["var(--font-barlow)", "sans-serif"],
       },
     },
   },
