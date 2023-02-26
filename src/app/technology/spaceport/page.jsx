@@ -1,18 +1,18 @@
 import Image from "next/image";
 import {
-  launchImagePortrait,
-  launchImageLandscape,
+  spacePortImageLandscape,
+  spacePortImagePortrait,
 } from "@/utils/technology-images";
 import TechNav from "@/components/TechNav";
 import TopHeading from "@/components/TopHeading";
 import Article from "@/components/Article";
 
-export default function Vechicle() {
+export default function Spaceport() {
   return (
     <section className="bg-technology-background-mobile bg-no-repeat bg-cover bg-center bg-fixed h-full w-full font-sans1 text-center mt-6 px-">
       <TopHeading number="03 " category="Space launch 101" />
       <Image
-        src={launchImageLandscape}
+        src={spacePortImageLandscape}
         alt="rocket booster"
         priority
         className="mb-px mt-8"
@@ -20,12 +20,11 @@ export default function Vechicle() {
       <TechNav />
       <Article
         heading="The terminology..."
-        subhead="Launch vehicle"
-        content="A launch vehicle or carrier rocket is a rocket-propelled vehicle used
-          to carry a payload from Earth's surface to space, usually to Earth
-          orbit or beyond. Our WEB-X carrier rocket is the most powerful in
-          operation. Standing 150 metres tall, it's quite an awe-inspiring sight
-          on the launch pad!"
+        subhead="Spaceport"
+        content="A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+        by analogy to the seaport for ships or airport for aircraft. Based in the 
+        famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+        of the Earth’s rotation for launch."
       />
     </section>
   );
