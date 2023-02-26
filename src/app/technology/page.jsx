@@ -9,7 +9,7 @@ import Article from "@/components/Article";
 
 export default function Vehicle() {
   return (
-    <section className="bg-technology-background-mobile bg-no-repeat bg-cover bg-center bg-fixed h-full w-full font-sans1 text-center mt-6 px-">
+    <section className="h-full w-full font-sans1 text-center mt-6 px-">
       <TopHeading number="03" category="Space launch 101" />
       <Image
         src={launchImageLandscape}
