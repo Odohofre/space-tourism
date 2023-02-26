@@ -1,8 +1,17 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
 import { logo, close, open } from "@/utils/shared-images";
+
+function NavLink({ href, number, page, Click }) {
+  return (
+    <Link href={href} className="block" onClick={Click}>
+      <span className="font-bold mr-3">{number}</span>
+      {page}
+    </Link>
+  );
+}
 
 export default function NavBar() {
   const [isOpen, setOpen] = useState(false);
@@ -62,19 +71,31 @@ export default function NavBar() {
             isOpen ? "block" : "hidden"
           } bg-white/[0.04] fixed top-0 right-0 h-screen w-2/3 z-40 backdrop-blur-2xl`}
         >
-          <div className="mt-28 pl-8 space-y-8 text-white font-sans tracking-[2.7px]">
-            <a href="#" className="block" onClick={handleLinkClick}>
-              00 HOME
-            </a>
-            <a href="#" className="block" onClick={handleLinkClick}>
-              01 DESTINATION
-            </a>
-            <a href="#" className="block" onClick={handleLinkClick}>
-              02 CREW
-            </a>
-            <Link href="/technology" className="block" onClick={handleLinkClick}>
-              03 TECHNOLOGY
-            </Link>
+          <div className="mt-28 pl-8 space-y-8 text-white font-sans1 tracking-[2.7px] uppercase">
+            <NavLink
+              href="/"
+              number="00"
+              page="home"
+              onClick={handleLinkClick}
+            />
+            <NavLink
+              href="/destination"
+              number="01"
+              page="destination"
+              onClick={handleLinkClick}
+            />
+            <NavLink
+              href="/crew"
+              number="02"
+              page="crew"
+              onClick={handleLinkClick}
+            />
+            <NavLink
+              href="/technology"
+              number="03"
+              page="technology"
+              onClick={handleLinkClick}
+            />
           </div>
         </div>
       </nav>

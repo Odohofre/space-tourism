@@ -29,7 +29,7 @@ const barlow_con = Barlow_Condensed({
 
 export default function RootLayout({ children }) {
   const [backgroundImage, setBackgroundImage] = useState(
-    "bg-home-background-mobile"
+    "bg-dark-blue"
   );
   const path = usePathname();
 
