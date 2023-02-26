@@ -10,10 +10,10 @@ import Article from "@/components/Article";
 export default function Spaceport() {
   return (
     <section className="bg-technology-background-mobile bg-no-repeat bg-cover bg-center bg-fixed h-full w-full font-sans1 text-center mt-6 px-">
-      <TopHeading number="03 " category="Space launch 101" />
+      <TopHeading number="03" category="Space launch 101" />
       <Image
         src={spacePortImageLandscape}
-        alt="rocket booster"
+        alt="a man facing a rocket booster"
         priority
         className="mb-px mt-8"
       />
