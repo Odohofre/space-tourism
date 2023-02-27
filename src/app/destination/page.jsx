@@ -11,7 +11,7 @@ export default function Moon() {
       <Image
         src={moon2}
         alt="moon"
-        width={170}
+        width={200}
         className="animate-spin-slow mx-auto mt-8"
       />
       <DestinationNav />

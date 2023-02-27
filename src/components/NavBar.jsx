@@ -20,7 +20,6 @@ export default function NavBar() {
 
   const handleLinkClick = () => {
     setOpen(false);
-    console.log("clicked link")
   };
   
   const handleClickOutside = (event) => {

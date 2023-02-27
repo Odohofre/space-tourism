@@ -11,7 +11,7 @@ export default function Europa() {
       <Image
         src={europa2}
         alt="europa moon"
-        width={170}
+        width={200}
         className="animate-spin-slow mx-auto mt-8"
       />
       <DestinationNav />

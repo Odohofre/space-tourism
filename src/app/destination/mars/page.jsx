@@ -11,7 +11,7 @@ export default function Mars() {
       <Image
         src={mars2}
         alt="mars"
-        width={170}
+        width={200}
         className="animate-spin-slow mx-auto mt-8"
       />
       <DestinationNav />

@@ -11,7 +11,7 @@ export default function Titan() {
       <Image
         src={titan2}
         alt="titan moon"
-        width={170}
+        width={200}
         className="animate-spin-slow mx-auto mt-8"
       />
       <DestinationNav />
