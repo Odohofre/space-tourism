@@ -20,19 +20,20 @@ export default function NavBar() {
 
   const handleLinkClick = () => {
     setOpen(false);
+    console.log("clicked link")
   };
-
+  
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
-      handleLinkClick();
+      setOpen(false);
     }
   };
 
   useEffect(() => {
-    document.addEventListener("touchstart", handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
 
     return () => {
-      document.removeEventListener("touchstart", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
@@ -54,6 +55,7 @@ export default function NavBar() {
             }`}
             onClick={() => setOpen(!isOpen)}
           >
+            <span className="sr-only">Open main menu</span>
             <Image
               src={isOpen ? close : open}
               ref={menuRef}
@@ -76,25 +78,25 @@ export default function NavBar() {
               href="/"
               number="00"
               page="home"
-              onClick={handleLinkClick}
+              Click={handleLinkClick}
             />
             <NavLink
               href="/destination"
               number="01"
               page="destination"
-              onClick={handleLinkClick}
+              Click={handleLinkClick}
             />
             <NavLink
               href="/crew"
               number="02"
               page="crew"
-              onClick={handleLinkClick}
+              Click={handleLinkClick}
             />
             <NavLink
               href="/technology"
               number="03"
               page="technology"
-              onClick={handleLinkClick}
+              Click={handleLinkClick}
             />
           </div>
         </div>
