@@ -10,11 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 150s linear infinite'
+      },
       backgroundImage: {
         "home-background-mobile":
           "url('../assets/Images/home-images/background-home-mobile.jpg')",
         "technology-background-mobile":
           "url('../assets/Images/technology-images/background-technology-mobile.jpg')",
+          'destination-background-mobile': "url('../assets/Images/destination-images/background-destination-mobile.jpg')",
       },
       colors: {
         "dark-blue": "#0b0d17",

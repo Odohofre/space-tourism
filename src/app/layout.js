@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body
-        className={`${backgroundImage} bg-dark-blue py-8 w-full h-screen bg-no-repeat bg-cover bg-center bg-fixed `}
+        className={`${backgroundImage} bg-dark-blue py-8 w-full h-full bg-no-repeat bg-cover bg-center bg-fixed `}
       >
         <NavBar />
         <main className="w-full h-full">{children}</main>
